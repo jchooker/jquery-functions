@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 980px;
+    min-height: 50px;
+    background-color: #2b4224;
+    margin: 10px auto;
+    padding: 20px 0 0 0;
+}
+
+#topmost-div {
+    width: 980px;
+    text-align: center;
+}
+
+#top-text-sample {
+    font-size: 44pt;
+}
+
+.orange-font1 {
+    font-family: Carter One;
+    color: #ff7e00;
+    text-shadow: 2px 2px black;
+}
+
+#middle-section {
+    width: 980px;
+    padding: 10px 20px 0 20px;
+}
+
+    #middle-row1 {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .middle-section-imgs {
+        width: 650px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+    }
+
+        #blurred-img1 {
+            background-image: url('images/Screenshot\ \(47\).png');
+            
+        }
+
+        .blurred-imgs {
+            width: 650px;
+            height: 340px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0 0 8px 8px #2b4224 inset;
+            border-radius: 15px;
+        }
+
+    .next-img {
+        display: none;
+    }
+
+    #middle-row2 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+        #blurred-img2 {
+            background-image: url('images/Screenshot\ \(50\).png');
+        }

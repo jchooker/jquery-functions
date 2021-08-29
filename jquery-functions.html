@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Test Space</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#topmost-div h1').click(function(){
+                alert('or Blighttown, or Catacombs, or Lost Izalith');
+                
+            })
+            $('#on-the-hunt').click(function(){
+                $(this).find('img').toggle();
+            })
+        });
+    </script>
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="topmost-div">
+            <h1 class="orange-font1" id="top-text-sample">Getting Owned in the Tomb of Giants</h1>
+        </div>
+        <div id="middle-section">
+            <div id="middle-row1">
+                <h2 class="orange-font1">Some Crystal Bros On the Hunt</h2>
+                <div id="on-the-hunt">
+                    <img src="images/Screenshot (41).png" alt="crystal golem 1" class="middle-section-imgs">
+                    <img src="images/Screenshot (44).png" alt="crystal golem 1" class="middle-section-imgs next-img">
+                </div>
+                
+            </div>
+            <div id="middle-row2">
+                <h2 class="orange-font1">Who's Comin?</h2>
+                <img src="images/Screenshot (57).png" alt="kaathe 1" class="middle-section-imgs" id="clickable-img1">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
