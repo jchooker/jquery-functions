@@ -16,6 +16,20 @@
             $('#on-the-hunt').click(function(){
                 $(this).find('img').toggle();
             })
+            $('#who-is-it img').click(function(){
+                $('#who-is-it img').slideToggle('medium', function(){
+                    if ($(this).is(':visible'))
+                        $(this).css('display', 'flex');
+                });
+                $('#whos-that').toggle();
+                $('#why-its').toggle();
+            })
+
+            $('#warp-images img').click(function(){
+                $('#default-show-img').css('visibility','hidden');
+                $('#default-hide-img').css('visibility', 'visible');
+                
+            })
         });
     </script>
 </head>
@@ -27,7 +41,7 @@
         </div>
         <div id="middle-section">
             <div id="middle-row1">
-                <h2 class="orange-font1">Some Crystal Bros On the Hunt</h2>
+                <h2 class="orange-font2">Some Crystal Bros On the Hunt   ( Click image )</h2>
                 <div id="on-the-hunt">
                     <img src="images/Screenshot (41).png" alt="crystal golem 1" class="middle-section-imgs">
                     <img src="images/Screenshot (44).png" alt="crystal golem 1" class="middle-section-imgs next-img">
@@ -35,8 +49,20 @@
                 
             </div>
             <div id="middle-row2">
-                <h2 class="orange-font1">Who's Comin?</h2>
-                <img src="images/Screenshot (57).png" alt="kaathe 1" class="middle-section-imgs" id="clickable-img1">
+                <h2 class="orange-font2" id="whos-that">Who's That Over There, Now? I Can't See Too Good...</h2>
+                <h2 class="orange-font2" id = "why-its">Why It's Just a Dang Ol Llama Style Snake - Kaathe...Saying He's My something or other</h2>
+                <div id="who-is-it">
+                    <img src="images/Screenshot (57).png" alt="kaathe 1" class="middle-section-imgs" id="clickable-img1">
+                    <img src="images/Screenshot (58).png" alt="kaathe 2" class="middle-section-imgs next-img">
+                </div>
+                
+            </div>
+            <div id="middle-row3">
+                <h1 class="orange-font2">Warp: Anor Londo to Painted World of Ariamis -------></h1>
+                <div id="warp-images">
+                    <img src="images/Screenshot (31).png" alt="location 1" class="middle-section-imgs2" id="default-show-img">
+                    <img src="images/Screenshot (24).png" alt="location 1" class="middle-section-imgs2" id="default-hide-img">
+                </div>
             </div>
         </div>
     </div>
